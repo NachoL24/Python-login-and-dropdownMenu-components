@@ -1,0 +1,31 @@
+{% extends "authComponent/templates/base.html" %}
+
+{% block title %}SignUp Page{% endblock %}
+{% block action %}action="/register"{% endblock %}
+{% block h3Title %}
+<h1 class="h3 mb-3 fw-bold">Sing up</h1>
+{% endblock %}
+
+{% block name %}
+    <div class="form-floating">
+        <input name="name" type="text" class="form-control rounded mb-2" id="floatingInput" placeholder="Name">
+        <label for="floatingInput">Name</label>
+    </div>
+{% endblock %}
+
+{% block confirmPassword %}
+    <div class="form-floating">
+        <input name="confirm_password" type="password" class="form-control rounded" id="floatingInput" placeholder="Confirm password">
+        <label for="floatingInput">Confirm Password</label>
+    </div>
+{% endblock %}
+
+{% block buttons %}
+    <button class="btn btn-warning w-100 py-2" type="submit">Sign up</button>
+    <div class="my-2 d-flex flex-row">
+        <a class="btn btn-secondary w-100 me-1" href="/login">Login</a>
+        <a class="btn btn-outline-secondary w-100 ms-1" href="/">Return</a>
+    </div>
+{% endblock %}
+                    
+        

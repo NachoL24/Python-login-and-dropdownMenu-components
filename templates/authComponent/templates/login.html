@@ -1,0 +1,13 @@
+{% extends "authComponent/templates/base.html" %}
+{% block title %}Login Page{% endblock %}
+{% block action %}action="/login"{% endblock %}
+{% block h3Title %}
+<h1 class="h3 mb-3 fw-bold">Log in</h1>
+{% endblock %}
+{% block buttons %}
+    <button class="btn btn-warning w-100 py-2" type="submit">Log in</button>
+    <div class="my-2 d-flex flex-row">
+        <a class="btn btn-secondary w-100 me-1" href="/register">Sign up</a>
+        <a class="btn btn-outline-secondary w-100 ms-1" href="/">Return</a>
+    </div>
+{% endblock %}

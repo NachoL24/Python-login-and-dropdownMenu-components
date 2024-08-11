@@ -1,0 +1,9 @@
+{% extends "index.html" %}
+{% block loginButton %}
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+    <p class="me-2 mb-0 text-light-emphasis">bienvenido {{email}}</p>
+{% endif %}
+{% endwith %}
+    <a class="btn btn-outline-secondary btn-sm ms-2" href="/logout">Logout</a>
+{% endblock %}
